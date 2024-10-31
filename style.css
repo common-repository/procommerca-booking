@@ -1,0 +1,31 @@
+.loader-wrapper {
+  text-align: center; }
+
+.loader-icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px; }
+  .loader-icon.padded {
+    margin: 15px; }
+  .loader-icon.large {
+    width: 150px;
+    height: 150px; }
+    .loader-icon.large.padded {
+      margin: 50px; }
+
+.loader-icon:after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid black;
+  border-color: black transparent black transparent;
+  animation: loader-icon 1.2s linear infinite; }
+
+@keyframes loader-icon {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
